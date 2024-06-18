@@ -601,7 +601,8 @@ Use the option `-f <FILE>` to output the results additionally to a tab-separated
 
 ## Running xerxes via a configuration file
 
-As you will have noticed, the command line above is getting quite long, since a separate `--stat` option has to be entered for every statistic to be computed. There is a more powerful and elegant interface to xerxes, which uses a configuration file in [YAML format](https://de.wikipedia.org/wiki/YAML). To illustrate it, let us consider the configuration file (which can be found in `fstats_working/F3_finnish.config` in the git-repository of this book) needed to compute the same statistic as above:
+- Problem: command line gets long, requiring a separate `--stat` option for every statistic.
+- More powerful interface to xerxes: configuration files:
 
 ```Yaml
 fstats:
@@ -613,11 +614,11 @@ fstats:
 
 You can then run xerxes as
 
-```{bash eval=FALSE}
+```bash
 xerxes fstats -d ~/dev/poseidon-framework/community-archive --statConfig fstats_working/F3_finnish.config
 ```
 
-So `xerxes` then automatically creates all combinations of populations listed in slots `a`, `b` and `c`. 
+- `xerxes` automatically runs all combinations of `a`, `b` and `c`. 
 
 :::{.callout-note}
 Note that there are actually three types of F3-statistics supported by xerxes:
@@ -629,7 +630,7 @@ Note that there are actually three types of F3-statistics supported by xerxes:
 The [white-paper]((https://github.com/poseidon-framework/poseidon-analysis-hs/blob/main/docs/xerxes_whitepaper.pdf)) explains this in detail.
 :::
 
-:::{.callout-tip}
+## More about configuration files
 The configuration file format has a lot more options. Here is a bit more complex example, but see also [the documentation](https://www.poseidon-adna.org/#/xerxes?id=input-via-a-configuraton-file):
 
 ```Yaml
@@ -658,8 +659,6 @@ fstats:
 ```
 
 which will not just create multiple statistic using row-combinations, as described, but also uses newly defined groups and combines multiple statistic types (F2, F3 and F4) in one run.
-:::
-
 
 ## F4 Statistics
 
