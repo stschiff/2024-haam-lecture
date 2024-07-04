@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: bb1685b8-ad90-4bb8-9a39-3ae15c030e10
+      url: 'https://stschiff.quarto.pub/2024-haam-lecture'

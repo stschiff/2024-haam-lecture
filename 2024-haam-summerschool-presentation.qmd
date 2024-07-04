@@ -2,11 +2,16 @@
 title: "Introduction to Population Genetics"
 subtitle: "2024 HAAM Summerschool Presentation"
 author: Stephan Schiffels
+institute: Max Planck Institute for Evolutionary Anthropology
+date: 2024-06-19
 format:
     revealjs:
         smaller: true
         scrollable: true
 ---
+
+## Source code 
+Sourcecode for this presentation and the code for many of the figures can be found at [https://github.com/stschiff/2024-haam-lecture](https://github.com/stschiff/2024-haam-lecture).
 
 # Outline
 
